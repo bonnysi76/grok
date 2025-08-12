@@ -31,8 +31,27 @@
 </head>
 
 <body> 
-    <h1 style="display: flex; align-items: center; justify-content: center; text-align: center;"> THIS IS ALL FAKE THO 😋</h1>
+   
+    <h1 style="
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  color: #ff5c8d; 
+  font-weight: 700; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInScale 2s ease forwards;
+  opacity: 0;
+">
+  From me to you, I love you Thandeka <span style="font-size: 1.3em;">❤️🤧😩</span>
+</h1>
 
+<style>
+  @keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+</style>
 
     <img src="https://ajlovechina.github.io/loveBalloon/static/music.png" style="position: fixed;z-index: 10001;top:100px;right:100px; width: 70px; height: 70px;"
         onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
