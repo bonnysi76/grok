@@ -1,15 +1,11 @@
-﻿
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Our Story</title>
 
-    <link type="text/css" rel="stylesheet" href="./index_files/default.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/default.css" />
     <script type="text/javascript" src="./index_files/jquery.min.js"></script>
     <script type="text/javascript" src="./index_files/jscex.min.js"></script>
     <script type="text/javascript" src="./index_files/jscex-parser.js"></script>
@@ -20,45 +16,26 @@
     <script type="text/javascript" src="./index_files/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="./index_files/love.js" charset="utf-8"></script>
     <script type="text/javascript" src="./config.js"></script>
+
     <style type="text/css">
-        <!--
         .STYLE1 {
-            color: #666666
+            color: #666666;
+        }
+    </style>
+
+    <style>
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
-        -->
-    </style>
-</head>
-
-<body> 
-   
-    <h1 style="
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
-  color: #ff5c8d; 
-  font-weight: 700; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  animation: fadeInScale 2s ease forwards;
-  opacity: 0;
-">
-  From me to you, I love you Thandeka <span style="font-size: 1.3em;">❤️🤧😩</span>
-</h1>
-
-<style>
-  @keyframes fadeInScale {
-    0% { opacity: 0; transform: scale(0.9); }
-    100% { opacity: 1; transform: scale(1); }
-  }
-</style>
-
-    <img src="https://ajlovechina.github.io/loveBalloon/static/music.png" style="position: fixed;z-index: 10001;top:100px;right:100px; width: 70px; height: 70px;"
-        onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
-    <audio class="song-audio-autoplay" controls loop style="display: none;visibility: hidden">
-        <source src="./index_files/music.mp3" type="audio/mp3" />
-    </audio>
-    <style type="text/css">
         .rotateImages {
             -webkit-animation: myRotate 10s linear infinite;
             animation: myRotate 10s linear infinite;
@@ -80,62 +57,82 @@
 
         @keyframes myRotate {
             0% {
-                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
             }
 
             50% {
-                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
             }
 
             100% {
-                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
             }
         }
     </style>
-    
+</head>
+
+<body>
+
+    <h1 style="
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+      color: #ff5c8d; 
+      font-weight: 700; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      animation: fadeInScale 2s ease forwards;
+      opacity: 0;
+    ">
+        From me to you, I love you Thandeka <span style="font-size: 1.3em;">❤️🤧😩</span>
+    </h1>
+
+    <img src="https://ajlovechina.github.io/loveBalloon/static/music.png"
+        style="position: fixed; z-index: 10001; top: 100px; right: 100px; width: 70px; height: 70px; cursor:pointer;"
+        onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused) { m.play(); this.classList.add('rotateImages'); } else { m.pause(); this.classList.remove('rotateImages'); }" />
+
+    <audio class="song-audio-autoplay" controls loop style="display: none; visibility: hidden;">
+        <source src="./index_files/music.mp3" type="audio/mp3" />
+    </audio>
 
     <div id="main">
         <div id="error">
-            You taught me love in its purest form-A love that is patient, a love that is kind.
-            You showed me the beauty within a storm,
-            A force both powerful and divine.
-            You revealed the strength I hold inside, And how to wield it without pride.
-            You helped me see who I truly am, The person I was meant to be all along.
-            You taught me to believe, to reach, to dream,
-            To embrace the goals I can achieve.
-            For this love, I'm endlessly grateful-A love that feels like a gift from above.
-            You've given me a piece of who you are, Keeping me grounded, never far.
-			You are everything. More than words can hold. My love for you runs deeper than any fight we’ve had or any silence between us.
-			You’re the fire that shapes me, the reason I keep pushing when everything else feels heavy.
-			Our relationship isn’t easy—sometimes it breaks me down, sometimes it builds me up. But through it all, you remain the center of my world. You’ve shown me what real love means, not just in the good times, but in the raw, messy moments too.
-			You’ve changed me—made me stronger, more patient, more honest with myself. And even when we fight, even when things get complicated, my love for you never fades. It grows.
-			You’re my anchor, my storm, my peace. And I promise, no matter what comes, I’ll always love you. Because loving you is the truest part of me .....ke ya go rata ka pelo yaka ka moka thendeka
+            You taught me love in its purest form-A love that is patient, a love that is kind.<br />
+            You showed me the beauty within a storm,<br />
+            A force both powerful and divine.<br />
+            You revealed the strength I hold inside, And how to wield it without pride.<br />
+            You helped me see who I truly am, The person I was meant to be all along.<br />
+            You taught me to believe, to reach, to dream,<br />
+            To embrace the goals I can achieve.<br />
+            For this love, I'm endlessly grateful-A love that feels like a gift from above.<br />
+            You've given me a piece of who you are, Keeping me grounded, never far.<br />
+            You are everything. More than words can hold. My love for you runs deeper than any fight we’ve had or any silence between us.<br />
+            You’re the fire that shapes me, the reason I keep pushing when everything else feels heavy.<br />
+            Our relationship isn’t easy—sometimes it breaks me down, sometimes it builds me up. But through it all, you remain the center of my world. You’ve shown me what real love means, not just in the good times, but in the raw, messy moments too.<br />
+            You’ve changed me—made me stronger, more patient, more honest with myself. And even when we fight, even when things get complicated, my love for you never fades. It grows.<br />
+            You’re my anchor, my storm, my peace. And I promise, no matter what comes, I’ll always love you. Because loving you is the truest part of me .....ke ya go rata ka pelo yaka ka moka thendeka
+        </div>
+
         <div id="wrap">
             <div id="text">
-                <div id="code">
-                </div>
+                <div id="code"></div>
             </div>
             <div id="clock-box">
-                <span id="clock-box-inside-text">
-                </span>
+                <span id="clock-box-inside-text"></span>
                 <div id="clock"></div>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
-
     </div>
 
     <script type="text/javascript">
+        // Populate #code and #clock-box-inside-text from config object
         $('#code').html(config.lines.map(item => {
-            return `<span class="say">${item}</span><br>
-						<span class="say"> </span><br>`
-        }).reduce((a, b) => {
-            return a + b;
-        }))
-        $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1"></span> ${config.names[1]}<span class="STYLE1"></span>`)
-    </script>
+            return `<span class="say">${item}</span><br><span class="say">&nbsp;</span><br>`;
+        }).join(''));
 
-    <script>
+        $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1"></span> ${config.names[1]}<span class="STYLE1"></span>`);
+
         (function () {
             var canvas = $('#canvas');
 
@@ -184,7 +181,7 @@
                     height: 5,
                     speed: 10,
                 }
-            }
+            };
 
             var tree = new Tree(canvas[0], width, height, opts);
             var seed = tree.seed;
@@ -193,15 +190,13 @@
 
             canvas.click(function (e) {
                 var offset = canvas.offset(),
-                    x,
-
- y;
+                    x, y;
                 x = e.pageX - offset.left;
                 y = e.pageY - offset.top;
                 if (seed.hover(x, y)) {
                     hold = 0;
-                    canvas.unbind("click");
-                    canvas.unbind("mousemove");
+                    canvas.off("click");
+                    canvas.off("mousemove");
                     canvas.removeClass('hand');
                 }
             }).mousemove(function (e) {
@@ -251,7 +246,7 @@
                 foot.draw();
                 tree.snapshot("p2", 500, 0, 610, 680);
 
-                // 会有闪烁不得意这样做, (＞﹏＜)
+                // There might be flickering, but this is the workaround
                 canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
                 canvas.css("background", "#ffe");
                 $await(Jscex.Async.sleep(300));
@@ -297,4 +292,3 @@
 </body>
 
 </html>
-
